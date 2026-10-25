@@ -1,0 +1,25 @@
+from typing import List, Dict
+
+def create_dict(name: str, age: int) -> Dict[str, int]:
+    ok_dict = {}
+
+    ok_dict[name] = age
+    return ok_dict
+
+
+def list_to_dict(words: List[str]) -> Dict[str, int]:
+    sec_dict = {}
+
+    for word,i in enumerate(words):
+        sec_dict[i] = word
+    return sec_dict
+
+
+
+# don't modify code below this line
+print(create_dict("Alice", 25))
+print(create_dict("Jane", 35))
+print(create_dict("Joe", 45))
+
+print(list_to_dict(["Alice", "Jane", "Joe"]))
+print(list_to_dict(["Apple", "Banana", "Watermelon", "Pineapple"]))
